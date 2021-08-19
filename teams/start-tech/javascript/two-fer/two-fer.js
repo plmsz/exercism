@@ -4,9 +4,14 @@
 //
 
 export const twoFer = (name) => {
-  if(name){
+  if (name) {
     return `One for ${name}, one for me.`
-  }else{
+  } else {
     return `One for you, one for me.`
   }
 };
+
+/* export const twoFer = (name) => {
+    name = name ?? "you"
+    return `One for ${name}, one for me.`
+}; */
