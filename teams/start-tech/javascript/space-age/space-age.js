@@ -4,7 +4,7 @@
 //
 
 export const age = (orbita, idade) => {
-  // function calc (orbita,idade){
+
   const anoTerrestre = 31557600;
   let anoNovaOrbita = 1;
   if (orbita === "earth") {
@@ -28,6 +28,3 @@ export const age = (orbita, idade) => {
 
   return idadeEmDeterminadaOrbita
 };
-
-// console.log(calc('earth', 1000000000))
-// console.log(calc('mercury', 2134835688))
