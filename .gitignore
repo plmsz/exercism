@@ -117,5 +117,8 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# ignore personal solutions
-/javascript
+#exercism
+/teams
+HELP.md 
+HINTS.md 
+LICENSE
