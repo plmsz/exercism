@@ -18,7 +18,7 @@ Este repositório contém os exercicios da trilha de JavaScript do <a href="http
   ```
   npm install
   ```
-* Se queiser, edite por exemplo o `hello_world.js`. Leia o `README.md` e o `hello_world.spec`
+* Se quiser, edite por exemplo o `hello_world.js`. Leia o `README.md` e o `hello_world.spec`
 
 * Execute os testes:
    ```
