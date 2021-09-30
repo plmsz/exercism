@@ -36,9 +36,8 @@ export function addSecretIngredient(friendsList, myList) {
     myList.push(friendsList[friendsList.length - 1])
 }
 export function scaleRecipe(recipe, portions) {
-    const scaledRecipe = recipe;
-    for (let ingredient in scaledRecipe) {
-        scaledRecipe[ingredient] *= portions / 2
+    for (let ingredient in recipe) {
+        recipe[ingredient] *= portions / 2
     }
-    return scaledRecipe
+    return recipe
 }
