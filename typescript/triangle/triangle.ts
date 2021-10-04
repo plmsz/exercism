@@ -1,21 +1,19 @@
 export class Triangle {
-  sidesA = 0;
-  sidesB = 0;
-  sidesC = 0;
+  private readonly sideA: number;
+  private readonly sideB: number;
+  private readonly sideC: number;
 
-  constructor(...sides) {
-    //spread operator - operações com dados
+  constructor(...sides: number[]) {
     this.sideA = sides[0];
     this.sideB = sides[1];
     this.sideC = sides[2];
-    this.sides = sides;
   }
 
-  get isAllSidesGreaterThan0() {
+  get isAllSidesGreaterThan0(): boolean {
     return this.sideA > 0 && this.sideB > 0 && this.sideC > 0;
   }
 
-  get isSumOfLenghtsGreaterThanThirdSide() {
+  get isSumOfLenghtsGreaterThanThirdSide():boolean {
     return (
       this.sideA + this.sideB >= this.sideC &&
       this.sideA + this.sideC >= this.sideB &&
@@ -23,18 +21,18 @@ export class Triangle {
     );
   }
 
-  get isExistent() {
+  get isExistent(): boolean {
     return (
       this.isAllSidesGreaterThan0 && this.isSumOfLenghtsGreaterThanThirdSide
     );
   }
 
-  get isEquilateral() {
+  get isEquilateral(): boolean {
     return (
       this.isExistent && this.sideA == this.sideB && this.sideB == this.sideC
     );
   }
-  get isIsosceles() {
+  get isIsosceles(): boolean {
     if (this.isExistent) {
       return (
         this.sideA == this.sideB ||
@@ -46,7 +44,7 @@ export class Triangle {
     }
   }
 
-  get isScalene() {
+  get isScalene(): boolean {
     if (this.isExistent) {
       return (
         this.sideA != this.sideB &&
@@ -56,12 +54,5 @@ export class Triangle {
     } else {
       return false;
     }
-  }
-  get isDegenerate() {
-    return (
-      this.sideA + this.sideB == this.sideC ||
-      this.sideA + this.sideC == this.sideB ||
-      this.sideB + this.sideC == this.sideA
-    );
   }
 }
