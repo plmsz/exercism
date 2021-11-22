@@ -2,7 +2,7 @@
     Exercism - Track Javascript
 </h1>
 
-Este repositório contém os exercicios da trilha de JavaScript do <a href="https://github.com/exercism/javascript/" target="_blank">Exercism</a>. As instruções dos exercícios em sua maioria, não foram alteradas, este repo existe apenas como um back-up das soluções.
+Este repositório contém os exercicios da trilha de JavaScript e da trilha do TypeScript do <a href="https://github.com/exercism/javascript/" target="_blank">Exercism</a>. As instruções dos exercícios em sua maioria, não foram alteradas, este repo existe apenas como um back-up das soluções.
 
 ## Como começar:
 
@@ -14,15 +14,27 @@ Este repositório contém os exercicios da trilha de JavaScript do <a href="http
    ```
    cd javascript/exercises/hello-world
    ```
+   Ou para Typescript:
+   ```
+   cd typescript/exercises/hello-world
+   ```
 * Instale as dependências necessárias
   ```
   npm install
   ```
-* Se quiser, edite por exemplo o `hello_world.js`. Leia o `README.md` e o `hello_world.spec`
+  Para Typescript:
+  ```
+  yarn install
+  ``` 
+* Se quiser, edite por exemplo o `hello_world.js` ou `hello_world.ts`. Leia o `README.md`, o `hello_world.spec` ou `hello_world.test.ts`
 
 * Execute os testes:
    ```
    npm test ./hello-world
+   ```
+   Para TS:
+   ```
+   YARN test ./hello-world
    ```
  ## Caso você queira começar do zero os exercicios:
  Crie uma conta no <a href="https://exercism.org/" target="_blank">Exercism</a>
